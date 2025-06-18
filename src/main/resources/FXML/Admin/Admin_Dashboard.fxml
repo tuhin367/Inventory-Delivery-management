@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1136.0" stylesheets="@../../Style/dashborad.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.goinventory.Controller.AdminDashboardController">
+   <children>
+      <!-- Revenue Section -->
+      <VBox layoutX="414.0" layoutY="326.0" prefHeight="424.0" prefWidth="621.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="326.0">
+         <children>
+            <PieChart fx:id="pieChart" prefHeight="394.0" prefWidth="679.0" />
+         </children>
+      </VBox>
+
+      <!-- Sales Activity Section -->
+      <VBox layoutX="24.0" layoutY="33.0" prefHeight="321.0" prefWidth="1092.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="33.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="   Activity">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <HBox prefHeight="229.0" prefWidth="485.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="250.0" styleClass="AnchorPane1">
+                     <children>
+                        <Text layoutX="61.0" layoutY="175.0" text="Assigned Delivery" wrappingWidth="142.7890625">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Text>
+                        <Text fx:id="AssignDelivery" layoutX="109.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="27.13671875">
+                           <font>
+                              <Font size="47.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="250.0" styleClass="AnchorPane1">
+                     <!-- Add material for Sales Activity 2 -->
+                     <Text layoutX="74.0" layoutY="178.0" text="Not Assign" />
+                     <Text fx:id="notAssign" layoutX="105.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="27.13671875">
+                        <font>
+                           <Font size="47.0" />
+                        </font>
+                     </Text>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="250.0" styleClass="AnchorPane1">
+                     <!-- Add material for Sales Activity 3 -->
+                     <Text layoutX="89.0" layoutY="173.0" text="Deliverd" wrappingWidth="94.0" />
+                     <Text fx:id="Deliverd" layoutX="106.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="27.13671875">
+                        <font>
+                           <Font size="47.0" />
+                        </font>
+                     </Text>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="237.0" prefWidth="250.0" styleClass="AnchorPane1">
+                     <!-- Add material for Sales Activity 4 -->
+                     <Text layoutX="37.0" layoutY="172.0" text="Active Delivery Man" wrappingWidth="184.5" />
+                     <Text fx:id="ActiveDelivery" layoutX="111.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="27.13671875">
+                        <font>
+                           <Font size="47.0" />
+                        </font>
+                     </Text>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
